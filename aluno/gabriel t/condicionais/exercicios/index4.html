@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 4</title>
+</head>
+<body>
+  <h1>Exercício 4</h1>
+  <script>
+    const experiencia = Number(prompt('Digite os anos de experiência:'));
+    const formacao = prompt('Digite a formação (graduacao, especializacao, mestrado, doutorado):').toLowerCase();
+
+    let pontosExperiencia = 0;
+    let pontosFormacao = 0;
+
+    if (isNaN(experiencia)) {
+      alert('Digite um valor numérico para a experiência.');
+    } else {
+      if (experiencia <= 5) {
+        pontosExperiencia = 10;
+      } else {
+        pontosExperiencia = 20;
+      }
+
+      switch (formacao) {
+        case 'graduacao':
+          pontosFormacao = 10;
+          break;
+        case 'especializacao':
+          pontosFormacao = 20;
+          break;
+        case 'mestrado':
+          pontosFormacao = 30;
+          break;
+        case 'doutorado':
+          pontosFormacao = 40;
+          break;
+        default:
+          alert('Formação inválida.');
+      }
+
+      if (pontosFormacao > 0) {
+        const pontuacaoTotal = pontosExperiencia + pontosFormacao;
+        alert(`Pontuação total: ${pontuacaoTotal} pontos.`);
+      }
+    }
+  </script>
+</body>
+</html>

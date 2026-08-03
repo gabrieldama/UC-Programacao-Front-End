@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3</title>
+</head>
+<body>
+  <h1>Exercício 3</h1>
+  <script>
+    const salarioMinimo = 1412;
+    const idade = Number(prompt('Digite sua idade:'));
+    const rendaMensal = Number(prompt('Digite sua renda mensal:'));
+
+    if (isNaN(idade) || isNaN(rendaMensal)) {
+      alert('Digite valores válidos.');
+    } else if (idade >= 18 && rendaMensal >= 2 * salarioMinimo) {
+      alert('Você está apto a realizar o consórcio.');
+    } else {
+      alert('Você não está apto a realizar o consórcio.');
+    }
+  </script>
+</body>
+</html>
