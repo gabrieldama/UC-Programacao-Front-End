@@ -27,11 +27,7 @@ Os exercícios a seguir devem ser realizados utilizando `do...while`:
 
 #### For
 
-1. Escreva um programa, utilizando for, que exiba os números de 0 a 100;
-2. Escreva um programa em que o usuário insira o peso de 10 pessoas e calcule a média aritmética do peso delas;
-3. Escreva um programa em que o usuário insira 10 números, exiba a contagem de quantos números inseridos são maiores do que 50;
-
-### Complementares
+1. E 
 
 1. Escreva um programa que calcula a soma dos números de 0 até _n_, sendo _n_ um número positivo maior que 1 inserido pelo usuário;
 2. Escreva um programa que realiza a soma de dois números inseridos pelo usuário até que ele digite a palavra "encerrar";

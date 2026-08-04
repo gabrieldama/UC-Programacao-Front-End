@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercício 5 - Lista de compras 2</title>
+</head>
+<body>
+  <h1>Exercício 5 - Lista de compras 2</h1>
+
+  <script>
+    function gerarTextoCompras(itens, formato) {
+      if (formato === 'texto') {
+        return itens.join(', ');
+      }
+
+      if (formato === 'lista') {
+        return itens.map(item => `• ${item}`).join('\n');
+      }
+
+      return 'Formato inválido';
+    }
+
+    const compras = ['Arroz', 'Feijão', 'Macarrão'];
+    console.log('Formato texto:');
+    console.log(gerarTextoCompras(compras, 'texto'));
+
+    console.log('Formato lista:');
+    console.log(gerarTextoCompras(compras, 'lista'));
+  </script>
+</body>
+</html>
