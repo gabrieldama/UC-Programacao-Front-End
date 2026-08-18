@@ -1,13 +1,38 @@
-const fundoPagina = document.querySelector("body");
-fundoPagina.style.backgroundColor = 'red';
+const trocarCorDeFundo = (cor) => {
+    document.body.style.backgroundColor = cor;
+};
 
-const titulos = document.querySelectorAll('h2');
+const trocarFonteTitulos = (nomeDaFonte) => {
+    const titulos = document.querySelectorAll('h1, h2');
+    titulos.forEach((titulo) => {
+        titulo.style.fontFamily = nomeDaFonte;
+    });
+};
 
-titulos.forEach(h2 => {
-    h2.style.fontFamily = "Arial, sans-serif"; 
-    h2.style.color = "white";
-});
+const removerMetaInformacoes = () => {
+    const metas = document.querySelectorAll('.meta');
+    metas.forEach((meta) => meta.remove());
+};
 
-const metas = document.querySelector(".meta");
+const inserirEmojiNosParagrafos = (emoji) => {
+    const artigos = document.querySelectorAll('article');
+    artigos.forEach((artigo) => {
+        const primeiroParagrafo = artigo.querySelector('p');
+        if (primeiroParagrafo) {
+            primeiroParagrafo.prepend(`${emoji} `);
+        }
+    });
+};
 
-metas.remove();
+const inserirAvisoIA = () => {
+    const main = document.querySelector('main');
+    if (!main) return;
+
+    const alertaDiv = document.createElement('div');
+    alertaDiv.className = 'alert';
+    alertaDiv.innerHTML = `
+        <p>⚠️ Atenção: os textos abaixo são excertos gerados com IA apenas porque são exemplos de preenchimento para uma atividade de programação. Leia, escreva, estude: não terceirize sua humanidade para uma máquina espertinha de autocompletar.</p>
+    `;
+
+    main.prepend(alertaDiv);
+};
