@@ -18,4 +18,6 @@ Faça os exercícios a seguir escrevendo código JavaScript a ser vinculado à s
 
 4. **Baralho `📁 baralho/`:** escreva um código que adiciona um evento ao baralho exibido, fazendo com que uma carta seja comprada a partir do array de objetos no `baralho.js`. Inclua a carta sorteada na página e remova-a do array.
 
+- Para sortear a carta, utilize o método [Math.random()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
 5. **{Em elaboração}**
