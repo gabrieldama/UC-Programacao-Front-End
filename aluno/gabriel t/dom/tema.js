@@ -9,12 +9,12 @@ const trocarFonteTitulos = (nomeDaFonte) => {
     });
 };
 
-const removerMetaInformacoes = () => {
+const removerMeta = () => {
     const metas = document.querySelectorAll('.meta');
     metas.forEach((meta) => meta.remove());
 };
 
-const inserirEmojiNosParagrafos = (emoji) => {
+const inserirEmoji = (emoji) => {
     const artigos = document.querySelectorAll('article');
     artigos.forEach((artigo) => {
         const primeiroParagrafo = artigo.querySelector('p');
