@@ -22,7 +22,7 @@ Faça os exercícios a seguir escrevendo código JavaScript a ser vinculado à s
 
 ### Desafio
 
-6. **Vinte e um:** com base em no exercício anterior, implemente um jogo de 21 para 2 jogadores.
+5. **Vinte e um:** com base em no exercício anterior, implemente um jogo de 21 para 2 jogadores.
     - Cada jogador deve iniciar recebendo duas cartas
     - A mesa vira uma carta
     - Cada jogador escolhe comprar mais uma carta ou não em seu turno
