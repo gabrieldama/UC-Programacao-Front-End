@@ -1,4 +1,3 @@
-//1. MENU SUSPENSO (3 PONTINHOS)
 function configurarMenuOpcoes() {
   var botoesOpcoes = document.querySelectorAll('.options-button');
  
@@ -17,7 +16,7 @@ function configurarMenuOpcoes() {
   }
 }
  
-// ===== 2. CONTAGEM DE COMENTÁRIOS =====
+// 2. CONTAGEM DE COMENTÁRIOS =====
 function atualizarContagemComentarios(publicacao) {
   var comentarios = publicacao.querySelectorAll('.comments-section > .comment');
   var totalComentarios = comentarios.length;
@@ -119,7 +118,7 @@ function configurarAdicionarComentario() {
     })(formularios[i]);
   }
 }
- 
+
 // ===== INICIALIZAR QUANDO A PÁGINA CARREGAR =====
 document.addEventListener('DOMContentLoaded', function() {
   // Atualiza a contagem de comentários no início
@@ -127,10 +126,11 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < publicacoes.length; i++) {
     atualizarContagemComentarios(publicacoes[i]);
   }
- 
+
   // Configura todas as funcionalidades
   configurarMenuOpcoes();
   configurarExpandirComentarios();
   configurarAdicionarComentario();
 });
+
  
