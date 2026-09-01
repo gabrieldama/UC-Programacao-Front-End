@@ -1,1 +1,50 @@
 /* ===== Menu de opções (3 pontinhos) ===== */
+.post-options {
+	position: relative;
+	cursor: pointer;
+}
+
+.options-button {
+	font-size: 20px;
+	cursor: pointer;
+	color: #65676b;
+	transition: color 0.2s;
+}
+
+.options-button:hover {
+	color: #000;
+}
+
+.options-menu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	min-width: 200px;
+	z-index: 100;
+	display: none;
+}
+
+.options-menu a {
+	display: block;
+	padding: 10px 16px;
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	transition: background-color 0.2s;
+}
+
+.options-menu a:hover {
+	background-color: #f0f2f5;
+}
+
+.options-menu a:first-child {
+	border-radius: 8px 8px 0 0;
+}
+
+.options-menu a:last-child {
+	border-radius: 0 0 8px 8px;
+}
